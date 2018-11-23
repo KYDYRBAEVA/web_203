@@ -95,6 +95,18 @@ fieldset {
     background: url(../images/marker.gif) no-repead left 5px;
     height: 1%; 
 }
+.news li{ line - height: 1.429em;
+    margin-top: -4px;
+    padding: 0 0 23px 0;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: top;
+}
+.news li a {
+    text-decoration: none;
+    line-height: 2em;
+}
 
+    
 
 
