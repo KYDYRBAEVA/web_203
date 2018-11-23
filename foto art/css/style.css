@@ -1,34 +1,67 @@
-body {background:url(../images/glowing_butterflies_in_a_mason_jar.jpg) repeat-x center top #000; font-family:Arial, Helvetica, sans-serif; font-size:100%; line-height:1em; color:#a6a6a6}
+body {background: url(../images/glowing_butterflies_in_a_mason_jar.jpg) repeat-x center top black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 100%; 
+    line-height: 1em; 
+    color: gray}
 
-html {min-width:1000px}
+html {min-width: 1000px}
 
-html, body {height:100%}
+html, body {height: 100%}
 
-.container {overflow:hidden; width:1000px; font-size:.875em; padding:60px 0 140px 0}
+.container {margin: 0 auto; 
+    overflow: hidden; 
+    width: 1000px; 
+    font-size: .875em; 
+    padding: 60px 0 140px 0}
 
-header .container {height:467px;}
+header .container {height: 467px; 
+    position: relative; 
+    padding:0}
 
-aside {width:311px; position:relative; z-index:10; float:left; margin-right:-10px}
+aside {width:311px; 
+    position: relative; 
+    z-index: 10; 
+    float: left; 
+    margin-right: -10px}
 
-section#content {position:relative; z-index:10;width:650px; float:left}
+section#content {position: relative; 
+    z-index: 10; 
+    width: 650px; 
+    float: left}
 
-footer {background:url(../images/photofacefun_com_1542871867.jpg) repeat-x center top; margin-top: 229px}
+footer .container {height: 229px; 
+    text-align: center; 
+    color: white; 
+    padding: 0; 
+    line-height: 1.429em}
 
-footer .container {height:229px; text-align:center; color:#fff; padding:0; line-height:1.429em}
+.fleft {float: left}
 
-.fleft {float:left}
+.fright {float: right}
 
-.fright {float:right}
+.clear {clear: both}
 
-.clear {clear:both}
+.col-1, .col-2, .col-3 {float: left}
 
-.col-1, .col-2, .col-3 {float:left}
+.alignright {text-align: right}
 
-.alignright {text-align:right}
+.aligncenter {text-align: center}
 
-.aligncenter {text-align:center}
+.wrapper {width:100%; 
+    overflow: hidden}
 
-.wrapper {width:100%; overflow:hidden}
+.wrap {height:auto !important; 
+    height: 100%; 
+    min-height: 100%}
 
-.wrap {height:auto !important; height:100%; min-height:100%}
+.ic, .ic a {border: 0; 
+    float: right; 
+    background: white; 
+    color: red; 
+    width: 50%; 
+    line-height: 10px; 
+    font-size: 10px;    
+    margin: -220% 0 0 0;
+    overflow: hidden;
+    padding: 0}
 
