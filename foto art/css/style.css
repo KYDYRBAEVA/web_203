@@ -127,6 +127,23 @@ fieldset {
     font-weight: normal;
     overflow: hidden;
 }
+.img-indent {
+    margin: 0 0 20px 0;
+}
+.img-box {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+    line-height: 1.429em;
+}
+.img-box img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+.exstra-wrap {
+    overflow: hidden;
+}
+    
 
 
     
