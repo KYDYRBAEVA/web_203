@@ -179,12 +179,15 @@ h2 {font-size: 30px;
 
 h5 {font-size: 1em;
     line-height: 1.429em;
-    color: dodgerblue;
-    font-weight: normal}
+    color: orange;
+    font-weight: normal;
+}
 
-.txt1 {color: dodgerblue}
+.txt1 {color: orange;
+}
 
-.txt2 p {line-height: 1.714em}
+.txt2 p {line-height: 1.714em;
+}
 
     
 
