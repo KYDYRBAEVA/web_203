@@ -39,3 +39,66 @@ header nav ul li a span span {padding: 40px 20px 26px 20px;
 
 header nav ul li a:hover span span, header nav ul li a.active span span {background-image:url(../images/nav-act-tail.gif);}
 
+
+#content .inside {padding:0 0 0 60px;
+}
+
+#content.extra {width:auto;
+}
+
+#content .list li {padding-bottom:8px;
+}
+
+
+aside .inside {padding:0 0 0 60px;
+}
+
+aside figure {margin-left: -60px;
+    padding-top: 15px;
+}
+
+
+footer .inside {padding: 148px 0 0 0;}
+
+footer a {color: white;
+}
+
+
+#contacts-form {clear:  right;
+    width: 100%; 
+    overflow: hidden;
+}
+
+#contacts-form fieldset {border: none;
+    float:left;
+}
+
+#contacts-form .field {clear: both;
+    height: 29px;
+}
+
+#contacts-form label {float: left;
+    width: 107px;
+    color: floralwhite;
+    padding-top: 2px;
+}
+
+#contacts-form input {width: 237px;
+    padding: 1px 0 1px 3px;
+    border: 1px solid floralwhite;
+    color: floralwhite;
+    background: none;
+    float: left;
+}
+
+#contacts-form textarea {width: 237px;
+    height: 114px;
+    padding: 1px 0 1px 3px;
+    border: 1px solid floralwhite;
+    color: floralwhite;
+    margin-bottom: 15px;
+    overflow: auto;
+    background: none;
+    float: left;
+}
+
