@@ -102,3 +102,13 @@ footer a {color: white;
     float: left;
 }
 
+ul.tabs { position: absolute;
+    right: 60px;
+    top: 90px;
+}
+ul.tabs li { float: left;
+    line-height: 1.2em;
+    padding-left: 10px;
+}
+
+
