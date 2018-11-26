@@ -143,6 +143,10 @@ fieldset {
 .exstra-wrap {
     overflow: hidden;
 }
+p { margin-bottom: 16px;
+    line-height: 1.429em;
+}
+p1 { margin-bottom: 25px;}
     
 
 
