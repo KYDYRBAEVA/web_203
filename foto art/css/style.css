@@ -146,7 +146,29 @@ fieldset {
 p { margin-bottom: 16px;
     line-height: 1.429em;
 }
-.p1 { margin-bottom: 25px;}
+.p1 { margin-bottom: 25px;
+}
+address {
+    line-height: 1.429em;
+    color: white;
+    font-style: normal;
+}
+address span { float: left;
+    color: ghostwhite;
+    width: 84px;
+}
+a { color: orange;
+    outline: none;
+}
+h1 {
+    font-size: 2.857em;
+    line-height: 1.2em;
+    font-weight: normal;
+    position: absolute;
+    left: 60px;
+    top: 18px;
+}
+    
     
 
 
