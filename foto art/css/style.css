@@ -168,7 +168,24 @@ h1 {
     left: 60px;
     top: 18px;
 }
-    
+h1 a {text-decoration: none;
+}
+
+h2 {font-size: 30px;
+    line-height: 1.2em;
+    color: white; 
+    margin-bottom: 20px;
+}
+
+h5 {font-size: 1em;
+    line-height: 1.429em;
+    color: dodgerblue;
+    font-weight: normal}
+
+.txt1 {color: dodgerblue}
+
+.txt2 p {line-height: 1.714em}
+
     
 
 
