@@ -1,0 +1,41 @@
+header nav {position: absolute;
+    right: 60px;
+    top: 0;
+    z-index: 20;
+}
+
+header nav ul li {float: left;
+    font-size: 16px;
+    line-height: 1.2em;
+    padding-left: 13px;
+}
+
+header nav ul li a {text-decoration: none;
+    display: block;
+    color: floralwhite;
+    background-image: url(../images/spacer.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+header nav ul li a:hover, header nav ul li a.active {color: black;
+    background-image:url(../images/nav-act-left.png);
+}
+
+header nav ul li a span {display: block;
+    padding: 0 3px;
+    background-repeat: no-repeat;
+    background-image:url(../images/spacer.gif); 
+    background-position: right top;
+}
+
+header nav ul li a:hover span, header nav ul li a.active span {background-image:url(../images/nav-act-right.png);
+}
+
+header nav ul li a span span {padding: 40px 20px 26px 20px; 
+    background-repeat: repeat-x;
+    background-image:url(../images/spacer.gif);
+}
+
+header nav ul li a:hover span span, header nav ul li a.active span span {background-image:url(../images/nav-act-tail.gif);}
+
