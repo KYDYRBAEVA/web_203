@@ -37,6 +37,7 @@ section#content {position: relative;
 }
 
 footer .container {height: 229px; 
+    margin-top: -200px;
     text-align: center; 
     color: white; 
     padding: 0; 
