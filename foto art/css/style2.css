@@ -40,17 +40,17 @@ header nav ul li a span span {padding: 40px 20px 26px 20px;
 header nav ul li a:hover span span, header nav ul li a.active span span {background-image:url(../images/nav-act-tail.gif);}
 
 
-#content .inside {padding:0 0 0 60px;
+#content .inside {padding: 0 0 0 60px;
 }
 
-#content.extra {width:auto;
+#content.extra {width: auto;
 }
 
-#content .list li {padding-bottom:8px;
+#content .list li {padding-bottom: 8px;
 }
 
 
-aside .inside {padding:0 0 0 60px;
+aside .inside {padding: 0 0 0 60px;
 }
 
 aside figure {margin-left: -60px;
@@ -172,7 +172,7 @@ ul.pagination {list-style: none;
     top: 0;
 }
 
-ul.pagination li {width: 183px;
+ul.pagination li { width: 183px;
     height: 99px;
     margin-bottom: 22px; 
     background:url(../images/img-wrapper-small.png) no-repeat left top;
@@ -182,7 +182,8 @@ ul.pagination li a {padding: 9px 0 0 9px;
     display: block;
 }
 
-ul.pagination li.current a {}a {outline: 0;
+ul.pagination li.current a {}a {
+    outline: 0;
     border: 0;
 }
 
