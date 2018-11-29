@@ -6,6 +6,6 @@ $(document).ready(function() {
 	$("ul.tabs li").click(function()){
 			      $("ul.tabs li").removeClass("active");
 			      $(this).addClass("active");
-			      $
+			      $(".tab_content").hide();
 
 	
