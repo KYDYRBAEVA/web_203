@@ -1,3 +1,5 @@
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
 body {background: url(../images/7211-linii-liniya-zelenyj-tma-tekstura-1366x768.jpg) repeat-x center top black; 
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 100%; 
