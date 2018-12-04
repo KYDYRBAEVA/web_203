@@ -14,4 +14,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 			}
 		};
 	}
+	try { $('body').unmousewheel(); } catch( error ) {}
+});
+
 
