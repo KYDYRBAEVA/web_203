@@ -27,3 +27,6 @@ if(typeof jQuery != "undefined") {
 										$.each(indices,function(j,k) { 
 											var $child = $children.eq(k);
 											var $clone = $child.clone(true);
+											$clone.show().appendTo($this);
+											if (callback !== undefined) {
+												callback($child, $clone);
