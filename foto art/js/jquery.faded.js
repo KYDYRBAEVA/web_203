@@ -66,3 +66,12 @@ if(typeof jQuery != "undefined") {
 									number++;
 								});
 							}
+							$("."+o.pagination+" li a:eq(0)",$t).parent().addClass("current");
+							$("."+o.pagination+" li a",$t).click(function(){
+								current = $("."+o.pagination+" li.current a",$t).attr("rel");									
+								clicked = $(this).attr("rel");
+								if (current != clicked) {animate("pagination",clicked,current);}
+								if(o.autoplay){pause();}
+								return false;
+							});
+						}
