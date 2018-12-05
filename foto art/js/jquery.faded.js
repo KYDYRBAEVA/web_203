@@ -46,4 +46,23 @@ if(typeof jQuery != "undefined") {
 									animate("next");
 								},o.autoplay);
 							},o.autorestart);			
-						}				
+						}
+						$c.css({position:"relative"});			
+						$c.children().css({
+							position:"absolute",
+							top: 0, 
+							left: 0,
+							zIndex: 0,
+							display:"none"
+						 });
+						if (o.autoheight) {
+							$c.animate({height: $c.children(":eq(0)").outerHeight()},o.autoheight);
+						}
+						if (o.pagination) {
+							if (o.autopagination) {
+								$t.append("<ul class="+o.pagination+"></ul>");
+								$c.children().each(function(){
+									$("."+o.pagination+"",$t).append("<li><a rel="+number+" href=\"#\" >"+(number+1)+"</a></li>");
+									number++;
+								});
+							}
