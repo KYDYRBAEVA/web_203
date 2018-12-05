@@ -30,3 +30,20 @@ if(typeof jQuery != "undefined") {
 											$clone.show().appendTo($this);
 											if (callback !== undefined) {
 												callback($child, $clone);
+													}
+										$child.remove();
+									});
+									}
+								}));
+							};
+							$c.reorder();
+						}
+						function pause() {
+							clearInterval(autoplay);
+							clearTimeout(restart);
+							restart = setTimeout(function() {
+								autoplay = setInterval(function(){
+									animate("next");
+								},o.autoplay);
+							},o.autorestart);			
+						}				
