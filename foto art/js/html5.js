@@ -11,7 +11,6 @@ document.createElement("figure");
 document.createElement("footer");
 document.createElement("header");
 document.createElement("hgroup");
-document.createElement("keygen");
 document.createElement("mark");
 document.createElement("meter");
 document.createElement("nav");
