@@ -77,3 +77,4 @@ if(typeof jQuery != "undefined") {
 						}
 						if (o.sequentialloading&&$c.children()[0].tagName=="IMG"){
 							$c.css({backgraund:"url("+o.loadingimg+") no-repeat 50% 50%"});
+							imgSrc = $("img:eq(0)",$c).attr("src");
