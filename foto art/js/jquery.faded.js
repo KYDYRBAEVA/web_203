@@ -75,3 +75,39 @@ if(typeof jQuery != "undefined") {
 									loaded = true;
 								});
 							});
+						}else {
+							$c.find(":eq(0)").fadeIn(o.speed,function(){
+								loaded = true;
+							});
+						}
+						if (o.bigtarget) {
+							$c.css({"cursor":"pointer"});
+							$c.click(function(){
+								animate("next");
+								if(o.autoplay){
+									if (o.autorestart) {
+										pause();
+									} else {
+										clearInterval(autoplay);	
+									}
+								}
+								return false;
+							});									
+						}			
+						if (o.autoplay) {
+							autoplay = setInterval(function(){
+								animate("next");
+							},o.autoplay);
+							pause();
+						}
+						$("."+o.nextbtn,$t).click(function(){
+							animate("next");
+							if(o.autoplay){
+								if (o.autorestart) {
+									pause();
+								} else {
+									clearInterval(autoplay);	
+								}
+							}
+							return false;
+						});				
