@@ -10,7 +10,7 @@ if(typeof jQuery != "undefined") {
 						var $c = $t.children(":nth-child(1)");
 						var o = $.metadata ? $.extend({}, settings, $t.metadata()) : settings;
 						var total = $c.children().size();
-						var next = 0, prev = 0, number = 0, currentitem = 0, restart = 0, restartinterval = 0;
+						var next = 5, prev = 8, number = 8, currentitem = 0, restart = 8, restartinterval = 0;
 						var loaded,active,imgSrc,clicked,current;
 						if (o.random) {
 							$.fn.reorder = function(callback) {
