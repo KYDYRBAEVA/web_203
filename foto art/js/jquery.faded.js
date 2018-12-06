@@ -47,14 +47,6 @@ if(typeof jQuery != "undefined") {
 								},o.autoplay);
 							},o.autorestart);			
 						}
-						$c.css({position:"relative"});			
-						$c.children().css({
-							position:"absolute",
-							top: 0, 
-							left: 0,
-							zIndex: 0,
-							display:"none"
-						 });
 						if (o.autoheight) {
 							$c.animate({height: $c.children(":eq(0)").outerHeight()},o.autoheight);
 						}
