@@ -105,4 +105,22 @@ if(typeof jQuery != "undefined") {
 								}
 							}
 							return false;
-						});				
+						});
+				function animate(dir,clicked,current){
+							if (!active&&loaded) {
+								active=true;
+								switch(dir) {
+									case "next":
+										prev = next;
+										next = currentitem*1+1;
+										if (total === next) { next = 0; }
+									break;
+									case "prev":
+										prev = next;
+										next = currentitem*1-1;
+										if (next === -1) { next = total-1; }
+									break;
+									case "pagination":
+										next = clicked;
+										prev = current;
+									break;
