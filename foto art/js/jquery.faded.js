@@ -75,3 +75,5 @@ if(typeof jQuery != "undefined") {
 								return false;
 							});
 						}
+						if (o.sequentialloading&&$c.children()[0].tagName=="IMG"){
+							$c.css({backgraund:"url("+o.loadingimg+") no-repeat 50% 50%"});
