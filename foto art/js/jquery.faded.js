@@ -14,11 +14,6 @@ if(typeof jQuery != "undefined") {
 						var loaded,active,imgSrc,clicked,current;
 						if (o.random) {
 							$.fn.reorder = function(callback) {
-								function randOrd() { return(Math.round(Math.random())-0.5); }
-									return($(this).each(function() {
-									var $this = $(this);
-									var $children = $this.children();
-									var childCount = $children.length;
 									if (childCount > 1) {
 										$children.hide();
 										var indices = new Array();
