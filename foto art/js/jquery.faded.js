@@ -80,7 +80,6 @@ if(typeof jQuery != "undefined") {
 							$c.click(function(){
 								animate("next");
 								if(o.autoplay){
-									if (o.autorestart) {
 										pause();
 									} else {
 										clearInterval(autoplay);	
