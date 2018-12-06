@@ -118,8 +118,5 @@ if(typeof jQuery != "undefined") {
 										prev = next;
 										next = currentitem*1-1;
 										if (next === -1) { next = total-1; }
-									break;
-									case "pagination":
-										next = clicked;
-										prev = current;
+								
 									break;
