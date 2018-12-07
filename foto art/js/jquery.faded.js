@@ -118,7 +118,8 @@ if(typeof jQuery != "undefined") {
 										if (next === -1) { next = total-1; }
 								
 									break;
-										if (o.pagination) {
+									
+									if (o.pagination) {
 									$(".pagination li.current",$t).removeClass("current");
 									$(".pagination li a:eq("+next+")",$t).parent().addClass("current");
 								}
