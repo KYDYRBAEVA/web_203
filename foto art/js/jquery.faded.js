@@ -130,11 +130,29 @@ if(typeof jQuery != "undefined") {
 										currentitem = next;
 										active = false;
 									});
-									} else {
+						
+								} else {
 									$c.children(":eq("+prev+")").fadeOut(":eq(o.speed,function()"){
 										if (o.autoheight) {
 											$c.animate({height: $c.children(":eq("+next+")").outerHeight()},o.autoheight,function(){
 												$c.children(":eq("+next+")").fadeIn(o.speed);
 											});
+											else{
+												$c.children(":eq("+next+")").fadeIn(o.speed);
+											}
+											currentitem = next;
+											active = false;
+											));
+										}
+									}
+								}
+								});
+							}
+				});
+				
+								
+							
+												
+												
 										
 										
