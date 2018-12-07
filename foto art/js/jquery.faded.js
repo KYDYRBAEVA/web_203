@@ -131,7 +131,7 @@ if(typeof jQuery != "undefined") {
 										active = false;
 									});
 									} else {
-									$c.children(":eq("+prev+")").fadeOut(o.speed,function(){
+									$c.children(":eq("+prev+")").fadeOut(":eq(o.speed,function()"){
 										if (o.autoheight) {
 											$c.animate({height: $c.children(":eq("+next+")").outerHeight()},o.autoheight,function(){
 												$c.children(":eq("+next+")").fadeIn(o.speed);
