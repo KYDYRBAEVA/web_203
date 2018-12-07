@@ -38,6 +38,7 @@ section#content {position: relative;
     z-index: 10; 
     width: 650px; 
     float: left;
+    color: white;
 }
 
 footer .container {height: 229px; 
