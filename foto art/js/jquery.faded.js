@@ -149,6 +149,24 @@ if(typeof jQuery != "undefined") {
 								});
 							}
 				});
+				$.fn.faded.defaults = {
+			speed: 300,
+			crossfade: false,
+			bigtarget: false,
+			sequentialloading: false,
+			autoheight: false,
+			pagination: "pagination",
+			autopagination: true,
+			nextbtn: "next",
+			prevbtn: "prev",
+			loadingimg: false,
+			autoplay: false,
+			autorestart: false,
+			random: false
+		};
+	});
+}
+
 				
 								
 							
