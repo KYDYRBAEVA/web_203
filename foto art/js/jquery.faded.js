@@ -103,7 +103,7 @@ if(typeof jQuery != "undefined") {
 							}
 							return false;
 						});
-				function animate(dir,clicked,current){
+				function animate(clicked,current){
 							if (!active&&loaded) {
 								active=true;
 								switch(dir) {
