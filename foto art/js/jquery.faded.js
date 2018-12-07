@@ -123,5 +123,12 @@ if(typeof jQuery != "undefined") {
 									$(".pagination li.current",$t).removeClass("current");
 									$(".pagination li a:eq("+next+")",$t).parent().addClass("current");
 								}
+								if (o.crossfade) {
+									$c.children(":eq("+next+")").css({zIndex:10}).fadeIn(o.speed,function(){
+										$c.children(":eq("+prev+")").css({display:"none",zIndex:0});
+										$(this).css({zIndex:0});
+										currentitem = next;
+										active = false;
+									});
 										
 										
