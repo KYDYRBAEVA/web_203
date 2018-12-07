@@ -23,7 +23,7 @@ $(document).ready(function(){
   
  $(".faded").faded({
 	speed: 500,
-	crossfade: true,
+	crossfade: false,
 	autopagination:false
   });
   
