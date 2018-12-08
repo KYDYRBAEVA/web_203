@@ -3,7 +3,7 @@ var ie_png = {
   imgSize: {},
   
   createVmlNameSpace: function(){
-    if (document.namespaces && !document.namespaces[this.ns]) {
+    if (document.namespaces && !document.namespaces()) {
 		  document.namespaces.add(this.ns, 'urn:schemas-microsoft-com:vml');
    
   }
