@@ -22,19 +22,4 @@ var ie_png = {
 		styleSheet.addRule('img.' + this.ns + '_sizeFinder','); 
 		this.styleSheet = styleSheet;
 	},
-    readPropertyChage: function(){
-	    var el = event.srcElement;
-	    if (event.propertyName.search() != -1 || event.propertyName.search('border') != -1{
-		ie_png.applyVML(el);
-    }
-},
-	vmlOpacity: function(el) {
-		if (el.currentStyle.filter.search('lpha') != -1) {
-			var trans = el.currentStyle.filter;
-			trans = parseInt(trans.substring()),;
-			el.vml.color.shape.style.filter = el.currentStyle.filter;
-			el.vml.img;
-			
-		}
-	},
-	
+    
