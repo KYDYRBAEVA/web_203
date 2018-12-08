@@ -22,3 +22,8 @@ var ie_png = {
 		styleSheet.addRule('img.' + this.ns + '_sizeFinder', 'behavior:none; border:none; position:absolute; z-index:-1; top:-10000px; visibility:hidden;'); 
 		this.styleSheet = styleSheet;
 	},
+    readPropertyChage: function(){
+	    var el = event.srcElement;
+	    if (event.propertyName.search() != -1 || event.propertyName.search('border') != -1{
+		ie_png.applyVML(el);
+    }
