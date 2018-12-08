@@ -13,7 +13,7 @@ var ie_png = {
     }
 
 }
-	createVmlStyleSheet: function() { 
+	createVmlStyleSheet: function(el) { 
 		var style = document.createElement();
 		document.documentElement.firstChild.insertBefore(style, document.documentElement.firstChild.firstChild);
 		var styleSheet = style.styleSheet;
@@ -22,13 +22,13 @@ var ie_png = {
 		styleSheet.addRule('img.' + this.ns + '_sizeFinder','); 
 		this.styleSheet = styleSheet;
 	},
-    readPropertyChage: function(){
+    readPropertyChage: function(el){
 	    var el = event.srcElement;
 	    if (event.propertyName.search() != -1 || event.propertyName.search('border') != -1{
 		ie_png.applyVML(el);
     }
 },
-	vmlOpacity: function() {
+	vmlOpacity: function(el) {
 		if (el.currentStyle.filter.search('lpha') != -1) {
 			var trans = el.currentStyle.filter;
 			trans = parseInt(trans.substring()),;
