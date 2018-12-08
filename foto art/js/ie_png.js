@@ -13,7 +13,7 @@ var ie_png = {
     }
 
 }
-	createVmlStyleSheet: function(el) { 
+	createVmlStyleSheet: function() { 
 		var style = document.createElement();
 		document.documentElement.firstChild.insertBefore(style, document.documentElement.firstChild.firstChild);
 		var styleSheet = style.styleSheet;
@@ -22,7 +22,7 @@ var ie_png = {
 		styleSheet.addRule('img.' + this.ns + '_sizeFinder','); 
 		this.styleSheet = styleSheet;
 	},
-    readPropertyChage: function(el){
+    readPropertyChage: function(){
 	    var el = event.srcElement;
 	    if (event.propertyName.search() != -1 || event.propertyName.search('border') != -1{
 		ie_png.applyVML(el);
