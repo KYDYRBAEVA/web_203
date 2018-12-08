@@ -3,5 +3,6 @@ var ie_png = {
   imgSize: {},
   
   createVmlNameSpace: function(){
+   
   }
 }
