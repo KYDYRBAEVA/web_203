@@ -7,7 +7,7 @@ var ie_png = {
 	document.namespaces.add(this.ns, 'urn:schemas-microsoft-com:vml');
    }
     if (window.attachEvent) {
-	    window.attachEvent('onbeforeunload', function() {
+	    window.attachEvent('onbeforeunload', function(el) {
 		    ie_png = null;
 	    });
     }
