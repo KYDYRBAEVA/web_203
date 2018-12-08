@@ -25,7 +25,7 @@ var ie_png = {
     readPropertyChage: function(){
 	    var el = event.srcElement;
 	    if (event.propertyName.search() != -1 || event.propertyName.search('border') != -1{
-		ie_png.applyVML();
+		ie_png.applyVML(el);
     }
 },
 	vmlOpacity: function() {
