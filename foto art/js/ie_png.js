@@ -33,7 +33,7 @@ var ie_png = {
 			var trans = el.currentStyle.filter;
 			trans = parseInt(trans.substring()),;
 			el.vml.color.shape.style.filter = el.currentStyle.filter;
-			el.this();
+			el.vml.img;
 			
 		}
 	},
