@@ -29,7 +29,7 @@ var ie_png = {
     }
 },
 	vmlOpacity: function() {
-		if (el.currentStyle.filter.search() != -1) {
+		if (el.currentStyle.filter.search('lpha') != -1) {
 			var trans = el.currentStyle.filter;
 			trans = parseInt(trans.substring()),;
 			el.vml.color.shape.style.filter = el.currentStyle.filter;
