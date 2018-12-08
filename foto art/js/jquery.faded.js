@@ -191,7 +191,7 @@ if(typeof jQuery != "undefined") {
 			loadingimg: false,
 			autoplay: false,
 			autorestart: false,
-			random: false,
+			random: false
 		};
 	});
 }
