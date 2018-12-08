@@ -19,7 +19,8 @@ var ie_png = {
 		var styleSheet = style.styleSheet;
 		styleSheet.addRule(this.ns + '\\:*', '{behavior:url()}');
 	        styleSheet.addRule(this.ns + '\\:shape', 'position:absolute;');
-		styleSheet.addRule('img.' + this.ns + '_sizeFinder','); 
-		this.styleSheet = styleSheet;
-	},
+		styleSheet.addRule('img.' + this.ns + '_sizeFinder',);
+	}
+},
+
     
