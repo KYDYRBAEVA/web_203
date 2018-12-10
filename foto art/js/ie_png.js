@@ -51,6 +51,23 @@ var ie_png = {
 			   ie_png.applyVML();
 	}, 1);
 },
+	fix: function(selector) {
+		var selectors = selector.split(','); 
+		for (var i=0; i<selectors.length; i++) {
+			this.styleSheet.addRule(selectors[i], 'behavior:expression(ie_png.fixPng(this))');
+		}
+	},
+	
+	applyVML: function(el) {
+		el.runtimeStyle.cssText = '';
+		this.vmlFill(el);
+		this.vmlOffsets(el);
+		this.vmlOpacity(el);
+		if (el.isImg) {
+			this.copyImageBorders(el);
+		}
+	},
+	
 	
 		
 		
