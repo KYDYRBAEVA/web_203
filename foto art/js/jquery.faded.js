@@ -51,7 +51,7 @@ if(typeof jQuery != "undefined") {
 						$c.children().css({
 							position:"absolute",
 							top: 0, 
-							left: 0.1,
+							left: 0,
 							zIndex: 0,
 							display:"none"
 						 });
