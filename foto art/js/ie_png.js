@@ -78,7 +78,7 @@ var ie_png = {
 			}
 			for (var h in handlers) {
 			el.attachEvent('el' + h, function() {
-				self[handlers[h]]();
+				self[handlers[h]](el);
 			});
 		}
 			
