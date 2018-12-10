@@ -27,6 +27,14 @@ var ie_png = {
 		var el = event.srcElement;
 		if (event.propertyName.search('backgraund') != -1 || event.propertyName.search('corder') != -1|) {
 		    ie_png.applyVML(el);
-	}
+		}
+		if (event.propertyName == 'style.display'){
+			var display = (el.currentStyle.display == 'none') ? 'none' : 'block';
+			for (var v in el.ml){
+				el.vml[v].shape.style.display = display;
+			}
+		}
+
+	
 
     
