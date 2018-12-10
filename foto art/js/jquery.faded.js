@@ -180,8 +180,8 @@ if(typeof jQuery != "undefined") {
 		});
 		$.fn.faded.defaults = {
 			speed: 400,
-			crossfade: false,
-			bigtarget: true,
+			crossfade: true,
+			bigtarget: false,
 			sequentialloading: false,
 			autoheight: false,
 			pagination: "pagination",
