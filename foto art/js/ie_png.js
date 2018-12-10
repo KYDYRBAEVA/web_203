@@ -34,6 +34,11 @@ var ie_png = {
 				el.vml[v].shape.style.display = display;
 			}
 		}
+		if (event.propertyName.search('filter') != -1) {
+			ie_png.vmlOpacity(el);
+		}
+},
+	
 
 	
 
