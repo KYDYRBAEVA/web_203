@@ -70,6 +70,13 @@ var ie_png = {
 		attachHandlers: function(el) {
 			vae self = this;
 			var handlers = {resize: 'vmlOffsets', move: ' vmlOffsets'};
+			if (el.nodeName == 'A') {
+				var moreForAs = {mouseLeave: 'handPseudoHover', mouseenter: 'handlePseudoHover', focus: 'handlePseudoHover', blur: 'handlePseudoHover'};
+				for (var a in moreForAs) {
+					handlers[a] = moreForAs[a];
+				}
+			}
+			
 	
 	
 		
