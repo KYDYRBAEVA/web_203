@@ -20,7 +20,13 @@ var ie_png = {
 		styleSheet.addRule(this.ns + '\\:*', '{behavior:url()}');
 	        styleSheet.addRule(this.ns + '\\:shape', 'position:absolute;');
 		styleSheet.addRule('img.' + this.ns + '_sizeFinder',);
+		this.styleSheet = styleSheet;
 	}
 },
+	readPropertyCharge: function(){
+		var el = event.srcElement;
+		if (event.propertyName.search('backgraund') != -1 || event.propertyName.search('corder') != -1|) {
+		    ie_png.applyVML(el);
+	}
 
     
