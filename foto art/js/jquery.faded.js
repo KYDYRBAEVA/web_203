@@ -51,7 +51,7 @@ if(typeof jQuery != "undefined") {
 						$c.children().css({
 							position:"absolute",
 							top: 0, 
-							left: 0,
+							left: 0.1,
 							zIndex: 0,
 							display:"none"
 						 });
@@ -185,7 +185,7 @@ if(typeof jQuery != "undefined") {
 			sequentialloading: false,
 			autoheight: false,
 			pagination: "pagination",
-			autopagination: false,
+			autopagination: true,
 			nextbtn: "next",
 			prevbtn: "prev",
 			loadingimg: false,
