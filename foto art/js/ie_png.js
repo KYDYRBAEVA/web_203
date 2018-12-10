@@ -38,7 +38,7 @@ var ie_png = {
 			ie_png.vmlOpacity(el);
 		}
 },
-	vmlOpacity: function(){
+	vmlOpacity: function(el){
 		if (el.currentStyle.filter.search('lpha') != -1{
 		    var trans = el.currentStyle.filter;
 		    trans = parselInt(trans.substring(trans.lastIndexOf('=')+1, trans.lastindexOf()), 10)/100;
@@ -48,7 +48,7 @@ var ie_png = {
 },
 	handlePseudoHover: function(el) {
 		setTimeout(function()) {
-			   ie_png.applyVML();
+			   ie_png.applyVML(el);
 	}, 1);
 },
 	fix: function(selector) {
