@@ -27,6 +27,7 @@ var ie_png = {
 		if (event.propertyName.search('background') != -1 || event.propertyName.search('border') != -1) {
 			ie_png.applyVML(el);
 		}
+		if (event.propertyName == 'style.display') {
 	
 			
 	
