@@ -12,9 +12,9 @@ var ie_png = {
 	    });
     }
 
-}
+},
 	createVmlStyleSheet: function() { 
-		var style = document.createElement();
+		var style = document.createElement('syale');
 		document.documentElement.firstChild.insertBefore(style, document.documentElement.firstChild.firstChild);
 		var styleSheet = style.styleSheet;
 		styleSheet.addRule(this.ns + '\\:*', '{behavior:url()}');
