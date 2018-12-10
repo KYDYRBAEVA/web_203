@@ -40,7 +40,9 @@ var ie_png = {
 },
 	vmlOpacity: function(){
 		if (el.currentStyle.filter.search('lpha') != -1{
-		    var trans;
+		    var trans = el.currentStyle.filter;
+		    trans = parselInt(trans.substring(trans.lastIndexOf('=')+1, trans.lastindexOf()), 100)/1000;
+		
 	
 
 	
