@@ -179,9 +179,9 @@ if(typeof jQuery != "undefined") {
 				}
 		});
 		$.fn.faded.defaults = {
-			speed: 300,
+			speed: 400,
 			crossfade: false,
-			bigtarget: false,
+			bigtarget: true,
 			sequentialloading: false,
 			autoheight: false,
 			pagination: "pagination",
@@ -190,7 +190,7 @@ if(typeof jQuery != "undefined") {
 			prevbtn: "prev",
 			loadingimg: false,
 			autoplay: false,
-			autorestart: false,
+			autorestart: true,
 			random: false
 		};
 	});
