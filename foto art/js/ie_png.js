@@ -38,6 +38,9 @@ var ie_png = {
 			ie_png.vmlOpacity(el);
 		}
 },
+	vmlOpacity: function(){
+		if (el.currentStyle.filter.search('lpha') != -1{
+		    var trans;
 	
 
 	
