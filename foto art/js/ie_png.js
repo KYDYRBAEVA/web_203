@@ -42,6 +42,16 @@ var ie_png = {
 		if (el.currentStyle.filter.search('lpha') != -1{
 		    var trans = el.currentStyle.filter;
 		    trans = parselInt(trans.substring(trans.lastIndexOf('=')+1, trans.lastindexOf()), 10)/100;
+		    el.vml.color.shpe.style.filter = el.currentStyle.filter;
+		    el.vml.image.fill.opacity = trans;
+	}
+},
+	handlePseudoHover: function(el) {
+		setTimeout(function()) {
+			   ie_png.applyVML();
+	}, 1);
+},
+	
 		
 		
 	
