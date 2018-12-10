@@ -76,6 +76,11 @@ var ie_png = {
 					handlers[a] = moreForAs[a];
 				}
 			}
+			for (var h in handlers) {
+			el.attachEvent('el' + h, function() {
+				self[handlers[h]]();
+			});
+		}
 			
 	
 	
