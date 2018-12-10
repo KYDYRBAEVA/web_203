@@ -28,6 +28,11 @@ var ie_png = {
 			ie_png.applyVML(el);
 		}
 		if (event.propertyName == 'style.display') {
+			var display = (el.currentStyle.display == 'none') ? 'none' : 'block';
+			for (var v in el.vml) {
+				el.vml[v].shape.style.display = display;
+			}
+			
 			
 	
 			
