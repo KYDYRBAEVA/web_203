@@ -28,6 +28,7 @@ var ie_png = {
 			ie_png.applyVML(el);
 		}
 		if (event.propertyName == 'style.display') {
+			var display = (el.currentStyle.display == 'none') ? 'none' : 'block';
 	
 			
 	
