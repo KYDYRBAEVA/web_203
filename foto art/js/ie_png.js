@@ -67,6 +67,9 @@ var ie_png = {
 			this.copyImageBorders(el);
 		}
 	},
+		attachHandlers: function(el) {
+			vae self = this;
+			var handlers = {resize: 'vmlOffsets', move: ' vmlOffsets'};
 	
 	
 		
