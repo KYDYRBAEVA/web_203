@@ -59,7 +59,7 @@ var ie_png = {
 	},
 	
 	applyVML: function(el) {
-		el.runtimeStyle.cssText ='style';
+		el.runtimeStyle.cssText ='';
 		this.vmlFill(el);
 		this.vmlOffsets(el);
 		this.vmlOpacity(el);
