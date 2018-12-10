@@ -81,6 +81,15 @@ var ie_png = {
 				self[handlers[h]](el);
 			});
 		}
+			el.attachEvent('onpropertychange', this.readPropertyChange);
+	},
+	
+	giveLayout: function(el) {
+		el.style.zoom = 1;
+		if (el.currentStyle.position == '') {
+			el.style.position = '';
+		}
+	},
 			
 	
 	
