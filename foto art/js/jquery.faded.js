@@ -185,7 +185,7 @@ if(typeof jQuery != "undefined") {
 			sequentialloading: false,
 			autoheight: false,
 			pagination: "pagination",
-			autopagination: true,
+			autopagination: false,
 			nextbtn: "next",
 			prevbtn: "prev",
 			loadingimg: false,
