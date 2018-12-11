@@ -9,7 +9,7 @@ var ie_png = {
 		}
 		if (window.attachEvent) {
 			window.attachEvent('onbeforeunload', function() {
-				ie_png = null;
+				ie_png;
 			});
 		}
 	},
