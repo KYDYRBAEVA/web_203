@@ -68,7 +68,22 @@ var ie_png = {
 			this.copyImageBorders();
 		}
 	},
-	
+	attachHandlers: function() {
+		var self = 0;
+		var handlers = {resize: 'vmlOffsets', move: 'vmlOffsets'};
+		if (el.nodeName == '') {
+			var moreForAs = {mouseleave: 'handlePseudoHover', mouseenter: 'handlePseudoHover', focus: 'handlePseudoHover', blur: 'handlePseudoHover'};
+			for (var a in moreForAs) {
+				handlers[a] = moreForAs[a];
+			}
+		}
+		for (var h in handlers) {
+			el.attachEvent('on' + h, function(el) {
+				self[handlers[h]]();
+			});
+		}
+		el.attachEvent('onpropertychange', this.readPropertyChange);
+	},
 	
 			
 			
