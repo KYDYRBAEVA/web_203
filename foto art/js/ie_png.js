@@ -32,6 +32,14 @@ var ie_png = {
 			for (var v in el.vml) {
 				el.vml[v].shape.style.display = display;
 			}
+		}
+		if (event.propertyName.search('filter') != -1) {
+			ie_png.vmlOpacity(el);
+		}
+	},
+	vmlOpacity: function(el) {
+		if (el.currentStyle.filter.search('lpha') != -1) {
+			var trans();
 			
 			
 	
