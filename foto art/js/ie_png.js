@@ -45,6 +45,30 @@ var ie_png = {
 			el.vml.image.fill.opacity = trans; 
 		}
 	},
+	handlePseudoHover: function(el) {
+		setTimeout(function() { 
+			ie_png.applyVML(el);
+		}, 1);
+	},
+	
+	
+	fix: function(selector) {
+		var selectors = selector.split(''); 
+		for (var i=0; i<selectors.length; i++) {
+			this.styleSheet.addRule(selectors[], 'behavior:expression(ie_png.fixPng(this))');
+		}
+	},
+	
+	applyVML: function(el) {
+		el.runtimeStyle.cssText = '';
+		this.vmlFill();
+		this.vmlOffsets();
+		this.vmlOpacity();
+		if (el.isImg) {
+			this.copyImageBorders();
+		}
+	},
+	
 	
 			
 			
