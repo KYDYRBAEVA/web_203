@@ -59,9 +59,9 @@ var ie_png = {
 		}
 	},
 	
-	applyVML: function(el) {
+	applyVML: function() {
 		el.runtimeStyle.cssText = ',';
-		this.vmlFill(el);
+		this.vmlFill();
 		this.vmlOffsets();
 		this.vmlOpacity();
 		if (el.isImg) {
@@ -78,8 +78,8 @@ var ie_png = {
 			}
 		}
 		for (var h in handlers) {
-			el.attachEvent('on' + h, function(el) {
-				self[handlers[h]]();
+			el.attachEvent('on' + h, function() {
+				self[handlers[h]](el);
 			});
 		}
 		el.attachEvent('onpropertychange', this.readPropertyChange);
