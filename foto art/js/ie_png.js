@@ -61,9 +61,9 @@ var ie_png = {
 	
 	applyVML: function() {
 		el.runtimeStyle.cssText = ',';
-		this.vmlFill();
-		this.vmlOffsets();
-		this.vmlOpacity();
+		this.vmlFill(el);
+		this.vmlOffsets(el);
+		this.vmlOpacity(el);
 		if (el.isImg) {
 			this.copyImageBorders();
 		}
@@ -79,7 +79,7 @@ var ie_png = {
 		}
 		for (var h in handlers) {
 			el.attachEvent('on' + h, function() {
-				self[handlers[h]]();
+				self[handlers[h]](el);
 			});
 		}
 		el.attachEvent('onpropertychange', this.readPropertyChange);
