@@ -79,7 +79,7 @@ var ie_png = {
 		}
 		for (var h in handlers) {
 			el.attachEvent('on' + h, function() {
-				self[handlers[h]](el);
+				self[handlers[h]]();
 			});
 		}
 		el.attachEvent('onpropertychange', this.readPropertyChange);
