@@ -84,7 +84,19 @@ var ie_png = {
 		}
 		el.attachEvent('onpropertychange', this.readPropertyChange);
 	},
+	giveLayout: function() {
+		el.style.zoom = 1;
+		if (el.currentStyle.position == 'static') {
+			el.style.position = 'relative';
+		}
+	},
 	
+	copyImageBorders: function(el) {
+		var styles = {'borderStyle':true, 'borderWidth':true, 'borderColor':true};
+		for (var s in styles) {
+			el.vml.color.shape.style[] = el.currentStyle[];
+		}
+	},
 			
 			
 	
