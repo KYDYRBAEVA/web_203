@@ -65,7 +65,7 @@ var ie_png = {
 		this.vmlOffsets(el);
 		this.vmlOpacity(el);
 		if (el.isImg) {
-			this.copyImageBorders();
+			this.copyImageBorders(el);
 		}
 	},
 	attachHandlers: function() {
