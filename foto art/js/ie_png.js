@@ -53,13 +53,13 @@ var ie_png = {
 	
 	
 	fix: function(selector) {
-		var selectors = selector.split(''); 
+		var selectors = selector.split(','); 
 		for (var i=0; i<selectors.length; i++) {
-			this.styleSheet.addRule(selectors[], 'behavior:expression(ie_png.fixPng(this))');
+			this.styleSheet.addRule(selectors[i], 'behavior:expression(ie_png.fixPng(this))');
 		}
 	},
 	
-	applyVML: function() {
+	applyVML: function(el) {
 		el.runtimeStyle.cssText = ',';
 		this.vmlFill(el);
 		this.vmlOffsets(el);
