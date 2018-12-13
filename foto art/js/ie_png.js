@@ -9,10 +9,11 @@ var ie_png = {
 		}
 		if (window.attachEvent) {
 			window.attachEvent('onbeforeunload', function() {
-				ie_png;
+				ie_png = null;
 			});
 		}
 	},
+	
 	createVmlStyleSheet: function() { 
 		var style = document.createElement('style');
 		document.documentElement.firstChild.insertBefore(style, document.documentElement.firstChild.firstChild);
@@ -22,6 +23,7 @@ var ie_png = {
 		styleSheet.addRule('img.' + this.ns + '_sizeFinder', 'behavior:none; border:none; position:absolute; z-index:-1; top:-10000px; visibility:hidden;'); 
 		this.styleSheet = styleSheet;
 	},
+	
 	readPropertyChange: function() {
 		var el = event.srcElement;
 		if (event.propertyName.search('background') != -1 || event.propertyName.search('border') != -1) {
@@ -37,6 +39,7 @@ var ie_png = {
 			ie_png.vmlOpacity(el);
 		}
 	},
+	
 	vmlOpacity: function(el) {
 		if (el.currentStyle.filter.search('lpha') != -1) {
 			var trans = el.currentStyle.filter;
@@ -45,6 +48,7 @@ var ie_png = {
 			el.vml.image.fill.opacity = trans; 
 		}
 	},
+	
 	handlePseudoHover: function(el) {
 		setTimeout(function() { 
 			ie_png.applyVML(el);
@@ -60,7 +64,7 @@ var ie_png = {
 	},
 	
 	applyVML: function(el) {
-		el.runtimeStyle.cssText = ',';
+		el.runtimeStyle.cssText = '';
 		this.vmlFill(el);
 		this.vmlOffsets(el);
 		this.vmlOpacity(el);
@@ -68,10 +72,11 @@ var ie_png = {
 			this.copyImageBorders(el);
 		}
 	},
-	attachHandlers: function() {
-		var self = 0;
+	
+	attachHandlers: function(el) {
+		var self = this;
 		var handlers = {resize: 'vmlOffsets', move: 'vmlOffsets'};
-		if (el.nodeName == '') {
+		if (el.nodeName == 'A') {
 			var moreForAs = {mouseleave: 'handlePseudoHover', mouseenter: 'handlePseudoHover', focus: 'handlePseudoHover', blur: 'handlePseudoHover'};
 			for (var a in moreForAs) {
 				handlers[a] = moreForAs[a];
@@ -84,7 +89,8 @@ var ie_png = {
 		}
 		el.attachEvent('onpropertychange', this.readPropertyChange);
 	},
-	giveLayout: function() {
+	
+	giveLayout: function(el) {
 		el.style.zoom = 1;
 		if (el.currentStyle.position == 'static') {
 			el.style.position = 'relative';
@@ -94,10 +100,9 @@ var ie_png = {
 	copyImageBorders: function(el) {
 		var styles = {'borderStyle':true, 'borderWidth':true, 'borderColor':true};
 		for (var s in styles) {
-			el.vml.color.shape.style[] = el.currentStyle[];
+			el.vml.color.shape.style[s] = el.currentStyle[s];
 		}
 	},
-			
 			
 	
 			
