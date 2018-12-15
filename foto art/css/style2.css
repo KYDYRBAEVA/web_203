@@ -12,7 +12,7 @@ header nav ul li {float: left;
 
 header nav ul li a {text-decoration: none;
     display: block;
-    color: black;
+    color: white;
     background-image: url(../images/spacer.gif);
     background-repeat: no-repeat;
     background-position: left top;
