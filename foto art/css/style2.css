@@ -19,6 +19,7 @@ header nav ul li a {text-decoration: none;
 }
 
 header nav ul li a:hover, header nav ul li a.active {color: black;
+    text-decoration: underline;
    
 }
 
@@ -30,6 +31,7 @@ header nav ul li a span {display: block;
 }
 
 header nav ul li a:hover span, header nav ul li a.active span {
+    text-decoration: underline;
 }
 
 header nav ul li a span span {padding: 40px 20px 26px 20px; 
@@ -37,7 +39,9 @@ header nav ul li a span span {padding: 40px 20px 26px 20px;
     background-image:url(../images/spacer.gif);
 }
 
-header nav ul li a:hover span span, header nav ul li a.active span span {}
+header nav ul li a:hover span span, header nav ul li a.active span span {
+    text-decoration: underline;
+}
 
 
 #content .inside {padding: 0 0 0 60px;
