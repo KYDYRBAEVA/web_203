@@ -12,29 +12,32 @@ header nav ul li {float: left;
 
 header nav ul li a {text-decoration: none;
     display: block;
-    color: floralwhite;
+    color: black;
+    background-image: url(../images/spacer.gif);
     background-repeat: no-repeat;
     background-position: left top;
 }
 
 header nav ul li a:hover, header nav ul li a.active {color: black;
-    background-image:url(../images/nav-act-left.png);
+   
 }
 
 header nav ul li a span {display: block;
     padding: 0 3px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-image:url(../images/spacer.gif); 
     background-position: right top;
 }
 
-header nav ul li a:hover span, header nav ul li a.active span {background-image:url(../images/nav-act-right.png);
+header nav ul li a:hover span, header nav ul li a.active span {
 }
 
 header nav ul li a span span {padding: 40px 20px 26px 20px; 
     background-repeat: repeat-x;
+    background-image:url(../images/spacer.gif);
 }
 
-header nav ul li a:hover span span, header nav ul li a.active span span {background-image:url(../images/nav-act-tail.gif);}
+header nav ul li a:hover span span, header nav ul li a.active span span {}
 
 
 #content .inside {padding: 0 0 0 60px;
@@ -57,7 +60,7 @@ aside figure {margin-left: -60px;
 
 footer .inside {padding: 148px 0 0 0;}
 
-footer a {color: white;
+footer a {color: black;
 }
 
 
@@ -76,14 +79,14 @@ footer a {color: white;
 
 #contacts-form label {float: left;
     width: 107px;
-    color: floralwhite;
+    color: white;
     padding-top: 2px;
 }
 
 #contacts-form input {width: 237px;
     padding: 1px 0 1px 3px;
-    border: 1px solid floralwhite;
-    color: floralwhite;
+    border: 1px solid black;
+    color: black;
     background: none;
     float: left;
 }
@@ -91,8 +94,8 @@ footer a {color: white;
 #contacts-form textarea {width: 237px;
     height: 114px;
     padding: 1px 0 1px 3px;
-    border: 1px solid floralwhite;
-    color: floralwhite;
+    border: 1px solid black;
+    color: black;
     margin-bottom: 15px;
     overflow: auto;
     background: none;
@@ -111,7 +114,7 @@ ul.tabs li {float: left;
     line-height: 1.2em; 
     padding-left: 10px}
 
-ul.tabs li a {color: white;
+ul.tabs li a {color: black;
     display: block;
     float: left;
     text-decoration: none;
@@ -183,6 +186,7 @@ ul.pagination li.current a {}a {
     outline: 0;
     border: 0;
 }
+
 
 
 
