@@ -13,7 +13,6 @@ header nav ul li {float: left;
 header nav ul li a {text-decoration: none;
     display: block;
     color: floralwhite;
-    background-image: url(../images/spacer.gif);
     background-repeat: no-repeat;
     background-position: left top;
 }
@@ -24,8 +23,7 @@ header nav ul li a:hover, header nav ul li a.active {color: black;
 
 header nav ul li a span {display: block;
     padding: 0 3px;
-    background-repeat: no-repeat;
-    background-image:url(../images/spacer.gif); 
+    background-repeat: no-repeat; 
     background-position: right top;
 }
 
@@ -34,7 +32,6 @@ header nav ul li a:hover span, header nav ul li a.active span {background-image:
 
 header nav ul li a span span {padding: 40px 20px 26px 20px; 
     background-repeat: repeat-x;
-    background-image:url(../images/spacer.gif);
 }
 
 header nav ul li a:hover span span, header nav ul li a.active span span {background-image:url(../images/nav-act-tail.gif);}
