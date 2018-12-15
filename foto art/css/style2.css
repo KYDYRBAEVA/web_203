@@ -41,6 +41,7 @@ header nav ul li a span span {padding: 40px 20px 26px 20px;
 }
 
 header nav ul li a:hover span span, header nav ul li a.active span span {
+    text-decoration: underline;
     
 }
 
