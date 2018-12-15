@@ -18,7 +18,7 @@ header nav ul li a {text-decoration: none;
     background-position: left top;
 }
 
-header nav ul li a:hover, header nav ul li a.active {color: white;
+header nav ul li a:hover, header nav ul li a.active {color: black;
     text-decoration: underline;
    
 }
