@@ -16,7 +16,7 @@ if(typeof jQuery != "undefined") {
 							$.fn.reorder = function(callback) {
 								function randOrd() { return(Math.round(Math.random())-0.5); }
 									return($(this).each(function() {
-									var $this = $(this);
+									var $this = $();
 									var $children = $this.children();
 									var childCount = $children.length;
 									if (childCount > 1) {
