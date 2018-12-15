@@ -37,6 +37,7 @@ header nav ul li a:hover span, header nav ul li a.active span {
 header nav ul li a span span {padding: 40px 20px 26px 20px; 
     background-repeat: repeat-x;
     background-image:url(../images/spacer.gif);
+    text-decoration: underline;
 }
 
 header nav ul li a:hover span span, header nav ul li a.active span span {
