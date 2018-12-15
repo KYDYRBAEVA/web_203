@@ -2,11 +2,14 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 }
 mark, rp, rt, ruby, summary, time {display: inline;
 }
-body {background: url(../images/7211-linii-liniya-zelenyj-tma-tekstura-1366x768.jpg) repeat-x center top black; 
+body {background: url(../images/scott-webb-249006-unsplash.jpg) repeat-x center top black; 
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 100%; 
     line-height: 1em; 
-    color: gray;
+    color: black;
+    width: 100%;
+    background-size: 100%;
+    opacity: 10%;
 }
 
 html {min-width: 1000px;
@@ -38,13 +41,13 @@ section#content {position: relative;
     z-index: 10; 
     width: 650px; 
     float: left;
-    color: white;
+    color: black;
 }
 
 footer .container {height: 229px; 
     margin-top: -200px;
     text-align: center; 
-    color: white; 
+    color: black; 
     padding: 0; 
     line-height: 1.429em;
 }
@@ -78,7 +81,7 @@ footer .container {height: 229px;
 
 .ic, .ic a {border: 0; 
     float: right; 
-    background: white; 
+    background: black; 
     color: red; 
     width: 50%; 
     line-height: 10px; 
@@ -101,7 +104,7 @@ fieldset {
     background: url(../images/marker.gif) no-repead left 5px;
     height: 1%; 
 }
-.news li{ line - height: 1.429em;
+.news li{line-height: 1.429em;
     margin-top: -4px;
     padding: 0 0 23px 0;
     width: 100%;
@@ -156,11 +159,11 @@ p { margin-bottom: 16px;
 }
 address {
     line-height: 1.429em;
-    color: white;
+    color: black;
     font-style: normal;
 }
 address span { float: left;
-    color: ghostwhite;
+    color: black;
     width: 84px;
 }
 a { color: orange;
@@ -179,7 +182,7 @@ h1 a {text-decoration: none;
 
 h2 {font-size: 30px;
     line-height: 1.2em;
-    color: white; 
+    color: black; 
     margin-bottom: 20px;
 }
 
@@ -194,6 +197,7 @@ h5 {font-size: 1em;
 
 .txt2 p {line-height: 1.714em;
 }
+
 
     
 
