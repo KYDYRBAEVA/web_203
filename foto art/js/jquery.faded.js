@@ -183,7 +183,7 @@ if(typeof jQuery != "undefined") {
 			crossfade: false,
 			bigtarget: false,
 			sequentialloading: false,
-			autoheight: false,
+			autoheight: true,
 			pagination: "pagination",
 			autopagination: true,
 			nextbtn: "next",
