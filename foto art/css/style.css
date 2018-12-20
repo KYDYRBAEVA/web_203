@@ -8,8 +8,10 @@ body {background: url(../images/110.jpg) repeat-x center top black;
     line-height: 1em; 
     color: black;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
     opacity: 10%;
+    backgraund-repeat: no-repeat;
+    
 }
 
 html {min-width: 1000px;
