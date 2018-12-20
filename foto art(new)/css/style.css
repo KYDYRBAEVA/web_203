@@ -1,0 +1,210 @@
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display: block;
+}
+mark, rp, rt, ruby, summary, time {display: inline;
+}
+body {background: url(../images/110.jpg) repeat-x center top black; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 100%; 
+    line-height: 1em; 
+    color: black;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 10%;
+
+}
+
+html {min-width: 1000px;
+}
+
+html, body {height: 100%;
+}
+
+.container {margin: 0 auto; 
+    overflow: hidden; 
+    width: 1000px; 
+    font-size: .875em; 
+    padding: 60px 0 140px 0;
+}
+
+header .container {height: 467px; 
+    position: relative; 
+    padding:0;
+    text-decoration: underline;
+}
+
+aside {width:311px; 
+    position: relative; 
+    z-index: 10; 
+    float: left; 
+    margin-right: -10px;
+}
+
+section#content {position: relative; 
+    z-index: 10; 
+    width: 650px; 
+    float: left;
+    color: black;
+}
+
+footer .container {height: 229px; 
+    margin-top: -200px;
+    text-align: center; 
+    color: black; 
+    padding: 0; 
+    line-height: 1.429em;
+}
+
+.fleft {float: left;
+}
+
+.fright {float: right;
+}
+
+.clear {clear: both;
+}
+
+.col-1, .col-2, .col-3 {float: left;
+}
+
+.alignright {text-align: right;
+}
+
+.aligncenter {text-align: center;
+}
+
+.wrapper {width:100%; 
+    overflow: hidden;
+}
+
+.wrap {height:auto !important; 
+    height: 100%; 
+    min-height: 100%;
+}
+
+.ic, .ic a {border: 0; 
+    float: right; 
+    background: black; 
+    color: red; 
+    width: 50%; 
+    line-height: 10px; 
+    font-size: 10px;    
+    margin: -220% 0 0 0;
+    overflow: hidden;
+    padding: 0;
+}
+input, select, textarea {
+    font-family: Arial, Helvetica, sans- serif;
+    font-size: 1em;
+    vertical-align: middle;
+    font-weight: normal;
+}
+fieldset {
+    border:0;
+}
+.list li {
+    padding: 0 0 14px 12px;
+    background: url(../images/marker.gif) no-repeat left 5px;
+    height: 1%; 
+}
+.news li{line-height: 1.429em;
+    margin-top: -4px;
+    padding: 0 0 23px 0;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: top;
+}
+.news li a {
+    text-decoration: none;
+    line-height: 2em;
+}
+.news li a:hover {text-decoration: underline;
+}
+
+.news li span {display: block;
+    float: left; 
+    padding-right: 20px;
+    font-size: .786em;
+    color: black; 
+    background:url(../images/marker1.gif) no-repeat left top;
+    text-align: center;
+    width: 19px; 
+    height: 18px;
+    position: relative;
+    top: 6px;
+    line-height: 1.2em;
+}
+
+.news li strong {display: block;
+    font-weight: normal;
+    overflow: hidden;
+}
+.img-indent {
+    margin: 0 0 20px 0;
+}
+.img-box {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+    line-height: 1.429em;
+}
+.img-box img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+.exstra-wrap {
+    overflow: hidden;
+}
+p { margin-bottom: 16px;
+    line-height: 1.429em;
+}
+.p1 { margin-bottom: 25px;
+}
+address {
+    line-height: 1.429em;
+    color: black;
+    font-style: normal;
+}
+address span { float: left;
+    color: black;
+    width: 84px;
+}
+a { color: orange;
+    outline: none;
+}
+h1 {
+    font-size: 2.857em;
+    line-height: 1.2em;
+    font-weight: normal;
+    position: absolute;
+    left: 60px;
+    top: 18px;
+}
+h1 a {text-decoration: none;
+}
+
+h2 {font-size: 30px;
+    line-height: 1.2em;
+    color: black; 
+    margin-bottom: 20px;
+}
+
+h5 {font-size: 1em;
+    line-height: 1.429em;
+    color: orange;
+    font-weight: normal;
+}
+
+.txt1 {color: orange;
+}
+
+.txt2 p {line-height: 1.714em;
+}
+
+
+    
+
+
+    
+
+

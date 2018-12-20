@@ -1,0 +1,199 @@
+header nav {position: absolute;
+    right: 60px;
+    top: 0;
+    z-index: 20;
+}
+
+header nav ul li {float: left;
+    font-size: 16px;
+    line-height: 1.2em;
+    padding-left: 13px;
+}
+
+header nav ul li a {text-decoration: none;
+    display: block;
+    color: black;
+    background-image: url(../images/spacer.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+header nav ul li a:hover, header nav ul li a.active {color: black;
+    text-decoration: underline;
+   
+}
+
+header nav ul li a span {display: block;
+    padding: 0 3px;
+    background-repeat: no-repeat;
+    background-image:url(../images/spacer.gif); 
+    background-position: right top;
+}
+
+header nav ul li a:hover span, header nav ul li a.active span {
+    text-decoration: underline;
+}
+
+header nav ul li a span span {padding: 40px 20px 26px 20px; 
+    background-repeat: repeat-x;
+    background-image:url(../images/spacer.gif);
+}
+
+header nav ul li a:hover span span, header nav ul li a.active span span {
+    text-decoration: underline;
+    
+}
+
+
+#content .inside {padding: 0 0 0 60px;
+}
+
+#content.extra {width: auto;
+}
+
+#content .list li {padding-bottom: 8px;
+}
+
+
+aside .inside {padding: 0 0 0 60px;
+}
+
+aside figure {margin-left: -60px;
+    padding-top: 15px;
+}
+
+
+footer .inside {padding: 148px 0 0 0;}
+
+footer a {color: orange;
+}
+
+
+#contacts-form {clear:  right;
+    width: 100%; 
+    overflow: hidden;
+}
+
+#contacts-form fieldset {border: none;
+    float:left;
+}
+
+#contacts-form .field {clear: both;
+    height: 29px;
+}
+
+#contacts-form label {float: left;
+    width: 107px;
+    color: black;
+    padding-top: 2px;
+}
+
+#contacts-form input {width: 237px;
+    padding: 1px 0 1px 3px;
+    border: 1px solid black;
+    color: black;
+    background: none;
+    float: left;
+}
+
+#contacts-form textarea {width: 237px;
+    height: 114px;
+    padding: 1px 0 1px 3px;
+    border: 1px solid black;
+    color: black;
+    margin-bottom: 15px;
+    overflow: auto;
+    background: none;
+    float: left;
+}
+
+ul.tabs { position: absolute;
+    right: 60px;
+    top: 90px;
+}
+ul.tabs li { float: left;
+    line-height: 1.2em;
+    padding-left: 10px;
+}
+ul.tabs li {float: left;
+    line-height: 1.2em; 
+    padding-left: 10px}
+
+ul.tabs li a {color: black;
+    display: block;
+    float: left;
+    text-decoration: none;
+    background:url(../images/button-left.png) no-repeat left top;
+    cursor: pointer;
+}
+
+ul.tabs li a:hover, ul.tabs li.active a {color: orange;
+}
+
+ul.tabs li a span {display: block;
+    float: left;
+    padding: 0 9px;
+    background:url(../images/button-right.png) no-repeat right top;
+}
+
+ul.tabs li a span span {padding: 9px 18px 8px 18px;
+    background:url(../images/button-tail.png) repeat-x left top;
+}
+
+.tab_container {position: relative;
+    top: 126px;
+    width: 100%;
+}
+
+
+.faded {width: 888px;
+    height: 341px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.faded ul.big-image {list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 653px;
+    height: 341px;
+    float: right;
+    background:url(../images/img-wrapper-big.png) no-repeat left top;
+    margin-top: 5.5px;
+}
+
+.faded ul.big-image li {padding: 9px 0 0 9px;
+    width: 635px;
+    height: 323px;
+}
+
+ul.pagination {list-style: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    width: auto; 
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+ul.pagination li { width: 183px;
+    height: 99px;
+    margin-bottom: 22px; 
+    background:url(../images/img-wrapper-small.png) no-repeat left top;
+}
+
+ul.pagination li a {padding: 9px 0 0 9px;
+    display: block;
+}
+
+ul.pagination li.current a {}a {
+    outline: 0;
+    border: 0;
+}
+
+
+
+
+
