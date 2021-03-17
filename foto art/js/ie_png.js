@@ -103,7 +103,7 @@ var ie_png = {
 			el.vml.color.shape.style[s] = el.currentStyle[s];
 		}
 	},
-	
+
 	vmlFill: function(el) {
 		if (!el.currentStyle) {
 			return;
@@ -114,6 +114,7 @@ var ie_png = {
 			el.vml[v].shape.style.zIndex = elStyle.zIndex;
 		}
 		el.runtimeStyle.backgroundColor = '';
+		el.runtimeStyle.backgraundSize = '';
 		el.runtimeStyle.backgroundImage = '';
 		var noColor = (elStyle.backgroundColor == 'transparent');
 		var noImg = true;
